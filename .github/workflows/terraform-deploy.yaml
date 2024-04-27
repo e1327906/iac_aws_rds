@@ -44,11 +44,9 @@ jobs:
         run: terraform plan
 
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/main'
         id: apply
-        run: terraform apply
+        run: terraform apply -auto-approve
 
       - name: Terraform Destroy
-        if: github.ref == 'refs/heads/destroy'
         id: destroy
         run: terraform destroy
