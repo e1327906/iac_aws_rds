@@ -1,4 +1,4 @@
-# Complete RDS example for PostgreSQL
+# iac_aws_rds for PostgreSQL
 
 Configuration in this directory creates a set of RDS resources including DB instance, DB subnet group and DB parameter group.
 
